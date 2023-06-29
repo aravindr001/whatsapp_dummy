@@ -44,10 +44,10 @@ class _HomePageState extends State<HomePage> {
                 icon: Text("Chats",style:TextStyle(fontSize: 20)),
               ),
               Tab(
-                icon: Text("Status"),
+                icon: Text("Status",style:TextStyle(fontSize: 20)),
               ),
               Tab(
-                icon: Text("Calls"),
+                icon: Text("Calls",style:TextStyle(fontSize: 20)),
               ),
             ],
           ),
