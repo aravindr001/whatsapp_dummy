@@ -68,26 +68,30 @@ class StatusPage extends StatelessWidget {
         final item = items[index];
 
         if (index == 0) {
-          return Stack(children: [
-            ListTile(
-              title: item.buildTitle(context),
-              subtitle: item.buildSubtitle(context),
-              leading: item.buildUserProfile(context),
-            ),
-            Positioned(
-                top: 40,
-                left: 50,
-                child: Container(
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.green,
-                        border: Border.all(color: Colors.black, width: 1)),
-                    child: Icon(
-                      Icons.add,
-                      size: 20,
-                      color: Colors.white,
-                    )))
-          ]);
+          return Padding(
+            padding: const EdgeInsets.only(top:5),
+            child: Stack(
+              children: [
+              ListTile(
+                title: item.buildTitle(context),
+                subtitle: item.buildSubtitle(context),
+                leading: item.buildUserProfile(context),
+              ),
+              Positioned(
+                  top: 40,
+                  left: 50,
+                  child: Container(
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.green,
+                          border: Border.all(color: Colors.black, width: 1)),
+                      child: Icon(
+                        Icons.add,
+                        size: 20,
+                        color: Colors.white,
+                      )))
+            ]),
+          );
         } else if (index == 1) {
           return Padding(
             padding: const EdgeInsets.all(18),
