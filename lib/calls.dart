@@ -36,12 +36,13 @@ class ListItems {
       padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.green,
+        color: Color.fromRGBO(26, 133, 106, 1),
       ),
       child: Transform.rotate(
         angle: -45 * math.pi / 180,
         child: Icon(
           Icons.link,
+          color: Colors.white,
           size: 28,
         ),
       ),
